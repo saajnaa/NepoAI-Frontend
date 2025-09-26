@@ -15,7 +15,7 @@ function Chatai() {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await axios.post("http://localhost:3000/", {
+            const response = await axios.post("https://nepoai-backend.onrender.com", {
                 Message: inputValue
 
             });
@@ -53,5 +53,6 @@ function Chatai() {
         </>
     )
 }
+
 
 export default Chatai;
